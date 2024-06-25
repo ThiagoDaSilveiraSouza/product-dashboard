@@ -1,0 +1,12 @@
+.create-product-template-page-main {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.add-component-button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}

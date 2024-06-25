@@ -1,0 +1,41 @@
+.sidebar {
+  flex: 0 0 220px;
+  height: 100vh;
+  background: #20489e;
+  overflow-y: auto;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  color: white;
+  padding: 10px;
+}
+.sidebar ul li {
+  width: fit-content;
+  position: relative;
+  display: flex;
+  user-select: none;
+}
+
+.sidebar ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  border-bottom: 2px solid white;
+  transition: 0.3s;
+}
+
+.sidebar ul .active::before {
+  width: 100%;
+}
+
+.sidebar ul li:hover {
+  scale: 1.04;
+  cursor: pointer;
+}

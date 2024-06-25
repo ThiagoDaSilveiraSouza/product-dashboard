@@ -1,0 +1,31 @@
+.create-template-form {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  gap: 20px;
+}
+.create-template-form > button {
+  cursor: pointer;
+}
+.create-template-form fieldset {
+  flex: 1 1 100%;
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.create-template-form fieldset > label {
+  flex: 0 1 200px;
+  display: flex;
+  flex-direction: column;
+}
+.create-template-form fieldset > label > input,
+.create-template-form fieldset > label > select {
+  width: 100%;
+}
+
+.create-template-form input,
+.create-template-form select {
+  height: 21px;
+  box-sizing: border-box;
+}
